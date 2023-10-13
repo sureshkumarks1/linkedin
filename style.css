@@ -1,74 +1,414 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 *{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-background-color: white;
+    margin: 0px;    
+    padding: 0px;
+    box-sizing: border-box;
 }
-li,a,button {
-font-family: "Montserrat", sans-serif;
-font-weight: 500;
-font-size: 16px;
-color: darkgray;
-text-decoration: none;
+body{
+    max-width: 1200px;
+    margin: auto;
 }
-header{
+.container{
+    
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+header nav{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar{
+    list-style: none;
+    display: flex;
+}
+header .navbar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin:0 10px;
+    font-size: 16px;
+}
+.main{
+    height: 700px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.formdiv{
+    /* border: 1px solid rebeccapurple; */
+    margin: 50px 0px;
+    width: 800px;
+
+}
+
+.formdiv h1{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 56px;
+    font-weight: 200;
+}
+.frmimage{
+margin:auto 0px;
+}
+.userna {       
+    margin-top: 10px;
+    border: 1.5px solid rebeccapurple;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    width: 430px;
+    height: 60px;
+}
+.userna:hover{
+    border: 2px solid black;
+}
+.userna input{
+    height: 25px;
+    margin: 15px 15px 15px 15px;
+    width: 400px;
+    outline: none;
+    background-color: #F5F5F5;
+    border: none;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.userna:hover{
+    background-color: #F5F5F5;
+}
+
+.outerform{
+    display: flex;
+    flex-direction: column;  
+    position: relative;  
+}
+button{
+    background-color:#0A66C2;
+    border-radius: 50px;
+    width: 450px;
+    font-size: 15px;    
+    height: 50px;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #004182;
+}
+
+.forgot{
+    padding: 20px 20px 20px 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.googbut{
+    background-color:white;
+    border-radius: 50px;
+    width: 450px;
+    font-size: 15px;    
+    height: 50px;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+.explorediv{    
+    border: 1px solid blue;
+    display: flex;
+    height: 450px;    
+    justify-content:space-between;
+    
+
+}
+.searchjob{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.searchjobleft{
+    padding-top: 50px;
+    width: 410px;
+}
+.searchjobright{
+    background-color: #F5F5F5;
+    height: 300px;    
+    width: 645px;
+    margin : 70px 0 70px auto;
+}
+
+
+
+.outerexp{
+    width: 350px;
+    border: 1px solid blue;
+    
+}
+h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.9);
+}
+p{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.9);
+}
+.para{
+    margin-top: 15px;
+}
+.findjobscontent ul li{
+    list-style-type: none;
+}
+
+.Listit{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    
+
+}
+.Listit ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.Listit li{
+    margin-top: 40px;
+    margin-left: 5px;
+ } 
+.Listit a{
+    
+    border: 1px solid #0A56C5;
+    padding:15px 20px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+
+} 
+.anchor{
+    
+    border: 1px solid #0A56C5;
+    padding:15px 20px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+
+}
+.signupbutton{ /*F0F7FE*/
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #0A56C5;
+    padding:15px 20px;
+    background-color:white;
+    border-radius: 50px;
+    font-weight: bold;
+    
+
+}
+
+.signupbutton:hover{ 
+    
+    background-color: #F0F7FE;}
+
+.exploreleft{
+    
+    /* border: 1px solid #0A56C5; */
+    width: 400px;
+    margin: auto auto auto 0px;
+
+}
+.exploreright{    
+    margin: auto 0 auto 300px;
+    /* border: 1px solid green; */
+}
+
+.exploreright ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.exploreright li{
+    margin-left: 5px;
+    list-style-type: none;
+    
+   }
+.postjob{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    border: 1px solid blue;
+   }
+.postjob h2{
+    align-content: center;
+    justify-content: flex-start;
+    width: 450px;
+    margin: auto auto auto 0;
+    
+    
+}
+.postjob a{
+    border: 1px solid #0A56C5;
+    padding:15px 20px;
+    background-color: antiquewhite;
+    border-radius: 50px;   
+}
+.searchjob h2{     
+    width: 450px;
+    margin: 70px auto auto 0;
+}
+.postjob p{     
+    width: 550px;
+    
+    margin: auto auto auto 0;
+    /* justify-content: center; */
+    
+}
+h3{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.9);
+}
+.outerpost{
+    display: flex;    
+    border: 1px solid #0A56C5;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;    
+}
+
+.outerpost .postjobbottom{    
+    width: 500px;
+    margin: auto auto auto 0;
+    border: 1px solid #0A56C5;
+    display: flex;
+    flex-direction: column;
+}
+
+.outerpost .imageblock{    
+    
+    width: auto;
+    border: 1px solid #0A56C5;
+    margin: auto 0 auto auto;
+}
+
+.outerpost h3{
+    margin: auto auto 3px 0px;
+    width: 500px;
+    
+}
+.outerpost p{
+    margin: 20px auto auto 0px;
+    width: 500px;
+    font-size: 26px;
+    
+}
+.postjobimage{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden; 
+  background-color: beige;
+}
+
+.outerpostoo{
+    display: flex;    
+    border: 1px solid #0A56C5;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;    
+    
+}
+.postjobbottomoo{ 
+    margin: auto auto auto 0;
+    border: 1px solid #0A56C5;    
+    flex-direction: column;
+    
+}
+.imageblockoo{            
+    border: 1px solid #0A56C5;
+    margin: auto 0 auto auto;
+   
+    
+}
+.postjobbottomoo h2{    
+    border:1px solid red; 
+    width: 450px;
+    margin: 70px auto auto 0;
+}
+.imageblockoo h2{
+    border:1px solid red; 
+    width: 450px;
+    margin: 70px auto auto 0;
+}
+
+.username{
+    border: 0px;
+}
+.username:active{
+    
+}
+.footer{
+    
+  
+}
+.infooter{
+    margin: 20px 0 20px auto;
+    /* width: 90%; */
+   
+    height: 90%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding: 15px 8%;
-
 }
-.logo{
-    cursor: pointer;    
-    margin-right: auto;
+.menu{
+    width: 18%;
+    
+    margin-left: 20px;
 }
-.nav__links{
-    list-style: none;
+.menu .ulfooter{
+    list-style-type: none;    
+    margin-top: 10px;
 }
-
-.nav__links li{
-    display: inline-block;
-    padding: 0px 20px;
+.menu li{
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4f98a9;
 }
-.nav__links li a{
-    transition: all 0.3s ease 0s;
+.menu h5{
+    
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
 }
-.nav__links li a:hover{
-    color: aqua;
+.infooter img{
+    height: 30px;
+    margin: 0 auto auto 0;
 }
-
-.signin {
-    padding: 15px 20px;
-    border-radius: 50px;
-    border-color: blue; 
-    font-weight: bold;       
-    border-width: 1px;  
-} 
-
-.joinnow {
-    padding: 15px 20px;
-    border-radius: 50px;
-    border-color: none;
-    font-weight: bold;  
-    border-width: 0px;
-} 
-.joinnow:hover {
-    background-color:#d3d1d1;
+.bottom {    
+    display: flex;
 }
-
-.signin:hover{
-    background-color:#acacfc9c;
+.bottom ul{
+    list-style-type: none;
+    justify-content: flex-start;
+}
+.outerform .lblshow{
+    position: absolute;
+    margin: 18px 15px 15px 375px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0A56C5;
+    
 }
 
-/* {
- background-color: darkseagreen;   
-} */
-/* .signin{
-    color: blue;
-    border-radius: 15px;
-    border: 2px;
-    border-color: black;
-    cursor: auto;
-} */
+.outerform .lblshow a{
+    text-decoration: none;
+}
+.outerform label{
+    color: #535c5e;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.outerform{
+    margin-top: 20px;
+}
