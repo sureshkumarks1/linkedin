@@ -116,7 +116,35 @@ hr{
     color: #F5F5F5;
     font-weight: bold;
 }
-button:hover{
+
+.googlebutt{
+    margin-top: 20px;
+}
+.newlinkbutton {
+    margin-top: 20px;
+}
+.googlebutt > button{
+    background-color:#fafbff;
+    border-radius: 50px;
+    width: 450px;
+    font-size: 15px;    
+    height: 50px;    
+    font-weight: bold;
+    outline: 1px;
+}
+
+.newlinkbutton > button{
+    background-color:#fff;
+    border-radius: 50px;
+    width: 450px;
+    font-size: 15px;    
+    height: 50px;    
+    font-weight: bold;
+    outline: 1px;
+}
+
+
+.usernabutt > button:hover{
     background-color: #004182;
 }
 
@@ -155,7 +183,7 @@ button:hover{
     width: 410px;
 }
 .searchjobright{
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
     height: 300px;    
     width: 645px;
     margin : 70px 0 70px auto;
