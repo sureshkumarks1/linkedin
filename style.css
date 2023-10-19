@@ -49,9 +49,11 @@ header .navbar a{
     font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
     font-size: 56px;
     font-weight: 200;
+    margin-bottom: 40px;
 }
 .frmimage{
 margin:auto 0px;
+overflow: visible;
 }
 .userna {       
     margin-top: 10px;
@@ -116,37 +118,10 @@ hr{
     color: #F5F5F5;
     font-weight: bold;
 }
-
-.googlebutt{
-    margin-top: 20px;
+.usernabutt button:hover{
+    background-color:#358dc7;
 }
-.newlinkbutton {
-    margin-top: 20px;
-}
-.googlebutt > button{
-    background-color:#fafbff;
-    border-radius: 50px;
-    width: 450px;
-    font-size: 15px;    
-    height: 50px;    
-    font-weight: bold;
-    outline: 1px;
-}
-
-.newlinkbutton > button{
-    background-color:#fff;
-    border-radius: 50px;
-    width: 450px;
-    font-size: 15px;    
-    height: 50px;    
-    font-weight: bold;
-    outline: 1px;
-}
-
-
-.usernabutt > button:hover{
-    background-color: #004182;
-}
+/* .usernabutt > button */
 
 /* .forgot{
     padding: 20px 20px 20px 0px;
@@ -154,15 +129,20 @@ hr{
     font-size: 16px;
 } */
 
-.googbut{
-    background-color:white;
-    border-radius: 50px;
-    width: 450px;
-    font-size: 15px;    
-    height: 50px;
-    color: #F5F5F5;
-    font-weight: bold;
+.googbut:hover{
+    background-color:#dcdddf;
 }
+.googbut{
+    margin-top: 30px ;
+    width: 450px;
+    /* border: 1px solid #0A56C5; */
+    padding:15px 20px;
+    /* background-color: antiquewhite; */
+    border-radius: 50px;
+    background-color: white;
+
+}
+
 .explorediv{    
     /* border: 1px solid blue; */
     display: flex;
@@ -234,15 +214,18 @@ p{
     
     border: 1px solid #0A56C5;
     padding:15px 20px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     border-radius: 50px;
 
 } 
+.anchor:hover , .Listit a:hover{
+    background-color: #f6f6f7;
+}
 .anchor{
     
-    border: 1px solid #0A56C5;
+    /* border: 1px solid #0A56C5; */
     padding:15px 20px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     border-radius: 50px;
 
 }
@@ -374,12 +357,25 @@ h3{
     /* border: 1px solid #0A56C5;     */
     flex-direction: column;
     
+} 
+
+.imageblockoo select{
+    padding: 10px;
+    border: 1px solid #e6e5e5;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ceced1;
+    width: 400px;
+    border-radius: 5px;
 }
+
 .imageblockoo{            
     /* border: 1px solid #0A56C5; */
-    margin: auto 0 auto auto;
-   
-    
+    margin: 30px 0 auto auto;
+}
+.imageblockoo h3{
+    margin-top: 35px;
 }
 .postjobbottomoo h2{    
     /* border:1px solid red;  */
@@ -389,7 +385,7 @@ h3{
 .imageblockoo h2{
     /* border:1px solid red;  */
     width: 450px;
-    margin: 70px auto auto 0;
+    margin: 55px auto auto 0;
 }
 
 .username{
@@ -430,11 +426,16 @@ h3{
 }
 .bottom {    
     display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
 }
-.bottom ul{
-    list-style-type: none;
-    justify-content: flex-start;
-}
+.bottom p{
+    margin: auto 15px auto 15px ;
+    font-size: 12px;
+}    
+
+
 .outerform .lblshow{
     position: absolute;
     margin: 32px 15px 15px 375px;
@@ -476,4 +477,44 @@ h3{
 
 .username2 input:hover {
     background-color: #F5F5F5;
+}
+
+.outerpostoo p a{
+    border: 1px solid #0A56C5;
+    padding:15px 20px;
+    /* background-color: antiquewhite; */
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.outerpostoo p{
+    margin-top: 30px;
+}
+.youtube{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+    
+}
+.youtubeleft{
+    width: 100%;
+    color: #6691d3;
+    margin: 150px auto 150px auto;
+   
+
+}
+.youtuberight{
+   
+    color: #6691d3;
+    
+}
+.youtuberight h2{
+    
+    color: #6691d3;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.youtuberight h3{
+    margin-top: 200px;
 }
